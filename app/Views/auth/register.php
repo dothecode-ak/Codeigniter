@@ -41,16 +41,17 @@ button
 </head>
 
 <body>
+
     <div class="container">
         <div class="userRegis">
             User Registration
         </div>
         <?php if($validation){echo  $validation->listErrors();}?>
-        <form action="<?php echo site_url('Users/register') ?>" method="POST">
+        <form action="<?php echo site_url('admin/register') ?>" method="POST">
             <div class="form-group">
                 <label for="exampleInputName">Name</label>
                 <input type="text" class="form-control" id="name" name="name" aria-describedby="nameHelp">
-
+                 
             </div>
             <div class="form-group">
                 <label for="exampleInputEmail1">Email address</label>
